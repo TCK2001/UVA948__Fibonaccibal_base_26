@@ -38,24 +38,24 @@ int main()
 	fib[1]=1;
 	for(i=2;i<39;i++)
 	{
-		fib[i]=fib[i-1]+fib[i-2]; //ÇÇº¸³ªÄ¡ 
+		fib[i]=fib[i-1]+fib[i-2]; //í”¼ë³´ë‚˜ì¹˜; 
 	}
 	int n,input; 
 	cin>>n;
-	while(n--) //È½¼ö 
+	while(n--) //íšŸìˆ˜; 
 	{
-		cin>>input; //°ª ÀÔ·Â 
+		cin>>input; //ê°’ ì…ë ¥; 
 		cout<<input<<" = ";
 		int flag=0;
-		for(i=38;i>=2;i--) //Àê Å«°ÅºÎÅÍ ºñ±³ ½ÃÀÛ  
+		for(i=38;i>=2;i--) //ì´ í°ê±°ë¶€í„° ë¹„êµ ì‹œì‘;  
 		{
-			if(input-fib[i]>=0) //•û¼­ 0º¸´Ù Å©°Å³ª °°À¸¸é 1 Ãâ·Â 
+			if(input-fib[i]>=0) //Â•å‘¼ 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ìœ¼ë©´ 1 ì¶œë ¥; 
 			{
 				cout<<"1";
 				input-=fib[i];
 				flag=1;
 			}
-			else if(flag==1) //Ãâ·ÂÇÏ°í 0Ãâ·Â 
+			else if(flag==1) //ì¶œë ¥í•˜ê³  0 ì¶œë ¥; 
 			{
 				cout<<"0";
 			}
